@@ -6,12 +6,12 @@
 body,html {
     width:100vw;
     height:100vh;
-    overflow:hidden;
 }
 
 body {
     background: #232323;
     color:white;
+    overflow-x:hidden;
 }
 
 input {
@@ -21,7 +21,7 @@ input {
 header {
     width:100%;
     height:30px;
-    background:rgba(0,255,0,0.2);
+    background:#124512;
     display:flex;
     align-items:center;
     position:fixed;
@@ -35,15 +35,15 @@ header span {
 }
 
 .pierwszy {
-    margin-top:50px;
+    margin-top:35px;
 }
 
 h2 {
-    margin: 20px 0;  
+    margin: 5px 0;  
     text-align:center;
 }
 
-.wybor1, .wybor2, .wybor3 {
+.wybor1, .wybor2, .wybor3, .wybor4 {
     width:100%;
     height:40px;
     background:rgba(0,255,0,0.1);
@@ -174,3 +174,22 @@ h2 {
 #wrap:not(:checked) ~ .piaskownica {
     flex-wrap:nowrap;
 }
+
+
+
+#direction1:checked ~ .wybor4 label:nth-child(1) {
+    background:springgreen !important;
+    color:black
+}
+#direction1:checked ~ .piaskownica {
+    flex-direction:column;
+}
+
+#direction2:checked ~ .wybor4 label:nth-child(2) {
+    background:springgreen !important;
+    color:black
+}
+#direction2:checked ~ .piaskownica {
+    flex-direction:row;
+}
+
