@@ -238,35 +238,13 @@ h2 {
 }
 
 
-
 .h2align {
-    position:relative;
-}
-#direction2:checked ~ .h2align {
     color:#f33;
     background:#562323;
     border:2px solid red;
-}
-.h2align p {
-    color:white;
-    font-size:15px;
     display:none;
 }
-#direction2:checked ~ .h2align p {
+
+#direction2:checked ~ .h2align {
     display:block;
 }
-/* #direction2:checked ~ .h2align::before {
-    content:'! ';
-    background:#562323;
-    text-align:center;
-    padding:2px 3px;
-    padding-left:7.5px;
-    border-radius:50%;
-    right:0px;
-    left:0;
-    border:2px solid red;
-    position:absolute;
-}
-.h2align:hover::before {
-    color:red;
-} */
