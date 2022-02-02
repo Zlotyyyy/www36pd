@@ -43,7 +43,7 @@ h2 {
     text-align:center;
 }
 
-.wybor1, .wybor2, .wybor3, .wybor4 {
+.wybor1, .wybor2, .wybor3, .wybor4, .wybor5, .wybor6 {
     width:100%;
     height:40px;
     background:rgba(0,255,0,0.1);
@@ -75,90 +75,129 @@ h2 {
     width:360px;
     height:360px;
     outline:seagreen 2px solid;
-    outline-offset:2px;
     margin: 0 auto;
     margin-top:30px;
     display:flex;
-    flex-wrap:wrap
 }
 
 .kwadrat {
     width:70px;
     height:70px;
-    outline:2px solid red;
+    border:2px solid red;
 }
 
 .prostokat {
     width:120px;
     height:70px;
-    outline:2px solid red;
+    border:2px solid red;
 }
 
 
 
-#align1:checked ~ .wybor1 label:nth-child(1) {
+#align-items1:checked ~ .wybor1 label:nth-child(1) {
     background:springgreen !important;
     color:black
 }
-#align1:checked ~ .piaskownica {
+#align-items1:checked ~ .piaskownica {
     align-items:flex-start;
 }
 
-#align2:checked ~ .wybor1 label:nth-child(2) {
+#align-items2:checked ~ .wybor1 label:nth-child(2) {
     background:springgreen !important;
     color:black
 }
-#align2:checked ~ .piaskownica {
+#align-items2:checked ~ .piaskownica {
     align-items:center;
 }
 
-#align3:checked ~ .wybor1 label:nth-child(3) {
+#align-items3:checked ~ .wybor1 label:nth-child(3) {
     background:springgreen !important;
     color:black
 }
-#align3:checked ~ .piaskownica {
+#align-items3:checked ~ .piaskownica {
     align-items:flex-end;
 }
 
 
 
-#justify1:checked ~ .wybor2 label:nth-child(1) {
+#align-content1:checked ~ .wybor5 label:nth-child(1) {
     background:springgreen !important;
     color:black
 }
-#justify1:checked ~ .piaskownica {
+#align-content1:checked ~ .piaskownica {
+    align-content:flex-start;
+}
+
+#align-content2:checked ~ .wybor5 label:nth-child(2) {
+    background:springgreen !important;
+    color:black
+}
+#align-content2:checked ~ .piaskownica {
+    align-content:space-between;
+}
+
+#align-content3:checked ~ .wybor5 label:nth-child(3) {
+    background:springgreen !important;
+    color:black
+}
+#align-content3:checked ~ .piaskownica {
+    align-content:center;
+}
+
+#align-content4:checked ~ .wybor5 label:nth-child(4) {
+    background:springgreen !important;
+    color:black
+}
+#align-content4:checked ~ .piaskownica {
+    align-content:space-around;
+}
+
+#align-content5:checked ~ .wybor5 label:nth-child(5) {
+    background:springgreen !important;
+    color:black
+}
+#align-content5:checked ~ .piaskownica {
+    align-content:flex-end;
+}
+
+
+#justify-content1:checked ~ .wybor2 label:nth-child(1) {
+    background:springgreen !important;
+    color:black
+}
+#justify-content1:checked ~ .piaskownica {
     justify-content:flex-start;
 }
 
-#justify2:checked ~ .wybor2 label:nth-child(2) {
+#justify-content2:checked ~ .wybor2 label:nth-child(2) {
     background:springgreen !important;
     color:black
 }
-#justify2:checked ~ .piaskownica {
+#justify-content2:checked ~ .piaskownica {
     justify-content:space-between;
 }
 
-#justify3:checked ~ .wybor2 label:nth-child(3) {
+#justify-content3:checked ~ .wybor2 label:nth-child(3) {
     background:springgreen !important;
     color:black
 }
-#justify3:checked ~ .piaskownica {
+#justify-content3:checked ~ .piaskownica {
     justify-content:center;
 }
 
-#justify4:checked ~ .wybor2 label:nth-child(4) {
+#justify-content4:checked ~ .wybor2 label:nth-child(4) {
     background:springgreen !important;
     color:black
 }
-#justify4:checked ~ .piaskownica {
+#justify-content4:checked ~ .piaskownica {
     justify-content:space-around;
 }
 
-#justify5:checked ~ .wybor2 label:nth-child(5) {
+#justify-content5:checked ~ .wybor2 label:nth-child(5) {
     background:springgreen !important;
     color:black
 }
-#justify5:checked ~ .piaskownica {
+#justify-content5:checked ~ .piaskownica {
     justify-content:flex-end;
 }
 
