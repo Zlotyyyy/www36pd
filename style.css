@@ -46,11 +46,11 @@ h2 {
 
 .wybor1, .wybor2, .wybor3, .wybor4, .wybor5, .wybor6 {
     width:100%;
-    height:50px;
     background:rgba(0,255,0,0.1);
     display:flex;
     align-items:center;
     justify-content:space-around;
+    flex-wrap:wrap;
 }
 
 .wybor {
@@ -62,6 +62,7 @@ h2 {
     border:2px solid white;
     cursor:pointer;
     font-size:15px;
+    margin: 2px;
 }
 
 .wybor span {
@@ -101,7 +102,7 @@ h2 {
 
 #align-items1:checked ~ .wybor1 label:nth-child(1) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-items1:checked ~ .piaskownica {
     align-items:flex-start;
@@ -109,7 +110,7 @@ h2 {
 
 #align-items2:checked ~ .wybor1 label:nth-child(2) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-items2:checked ~ .piaskownica {
     align-items:center;
@@ -117,17 +118,24 @@ h2 {
 
 #align-items3:checked ~ .wybor1 label:nth-child(3) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-items3:checked ~ .piaskownica {
     align-items:flex-end;
+}
+#align-items4:checked ~ .wybor1 label:nth-child(4) {
+    background:springgreen !important;
+    color:black;
+}
+#align-items4:checked ~ .piaskownica {
+    align-items:none;
 }
 
 
 
 #align-content1:checked ~ .wybor5 label:nth-child(1) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-content1:checked ~ .piaskownica {
     align-content:flex-start;
@@ -135,7 +143,7 @@ h2 {
 
 #align-content2:checked ~ .wybor5 label:nth-child(2) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-content2:checked ~ .piaskownica {
     align-content:space-between;
@@ -143,7 +151,7 @@ h2 {
 
 #align-content3:checked ~ .wybor5 label:nth-child(3) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-content3:checked ~ .piaskownica {
     align-content:center;
@@ -151,7 +159,7 @@ h2 {
 
 #align-content4:checked ~ .wybor5 label:nth-child(4) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-content4:checked ~ .piaskownica {
     align-content:space-around;
@@ -159,16 +167,24 @@ h2 {
 
 #align-content5:checked ~ .wybor5 label:nth-child(5) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #align-content5:checked ~ .piaskownica {
     align-content:flex-end;
 }
 
+#align-content6:checked ~ .wybor5 label:nth-child(6) {
+    background:springgreen !important;
+    color:black;
+}
+#align-content6:checked ~ .piaskownica {
+    align-content:none;
+}
+
 
 #justify-content1:checked ~ .wybor2 label:nth-child(1) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #justify-content1:checked ~ .piaskownica {
     justify-content:flex-start;
@@ -176,7 +192,7 @@ h2 {
 
 #justify-content2:checked ~ .wybor2 label:nth-child(2) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #justify-content2:checked ~ .piaskownica {
     justify-content:space-between;
@@ -184,7 +200,7 @@ h2 {
 
 #justify-content3:checked ~ .wybor2 label:nth-child(3) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #justify-content3:checked ~ .piaskownica {
     justify-content:center;
@@ -192,7 +208,7 @@ h2 {
 
 #justify-content4:checked ~ .wybor2 label:nth-child(4) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #justify-content4:checked ~ .piaskownica {
     justify-content:space-around;
@@ -200,10 +216,17 @@ h2 {
 
 #justify-content5:checked ~ .wybor2 label:nth-child(5) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #justify-content5:checked ~ .piaskownica {
     justify-content:flex-end;
+}
+#justify-content6:checked ~ .wybor2 label:nth-child(6) {
+    background:springgreen !important;
+    color:black;
+}
+#justify-content6:checked ~ .piaskownica {
+    justify-content:none;
 }
 
 
@@ -223,7 +246,7 @@ h2 {
 
 #direction1:checked ~ .wybor4 label:nth-child(1) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #direction1:checked ~ .piaskownica {
     flex-direction:column;
@@ -231,7 +254,7 @@ h2 {
 
 #direction2:checked ~ .wybor4 label:nth-child(2) {
     background:springgreen !important;
-    color:black
+    color:black;
 }
 #direction2:checked ~ .piaskownica {
     flex-direction:row;
@@ -243,6 +266,8 @@ h2 {
     background:#562323;
     border:2px solid red;
     display:none;
+    width:80%;
+    margin:5px auto;
 }
 
 #direction2:checked ~ .h2align {
